@@ -4,7 +4,7 @@ import 'package:percent_indicator/linear_percent_indicator.dart';
 
 import '../constants.dart';
 
-Widget progressIndicator({BuildContext context, leading, percent, fillPer}) {
+Widget progressIndicatorTablet({BuildContext context, leading, percent, fillPer}) {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
@@ -20,11 +20,11 @@ Widget progressIndicator({BuildContext context, leading, percent, fillPer}) {
             // width: 600,
             animation: true,
             lineHeight: 12.0,
-            animationDuration: 2000,
+            animationDuration: 4000,
             percent: fillPer,
             center: Text(
               percent,
-              style: new TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold)
+              style: new TextStyle(color: Colors.white, fontSize: 8, fontWeight: FontWeight.bold)
             ),
             linearStrokeCap: LinearStrokeCap.roundAll,
             progressColor: violet,

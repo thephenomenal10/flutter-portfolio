@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myCV/widgets/fifthPage.dart';
-import 'package:myCV/widgets/firstPage.dart';
-import 'package:myCV/widgets/fourthPage.dart';
-import 'package:myCV/widgets/secondPage.dart';
-import 'package:myCV/widgets/sixthPage.dart';
-import 'package:myCV/widgets/thirdPage.dart';
-
-import '../constants.dart';
+import 'package:myCV/Layout/firstPageLayout.dart';
+import 'package:myCV/Layout/secondPageLayout.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -19,16 +13,17 @@ class _HomePageState extends State<HomePage> {
     return new Scaffold(
         backgroundColor: Colors.black,
         body: PageView(
-              scrollDirection: Axis.vertical,pageSnapping: false,
-              children: [
-                FirstPage(),
-                SecondPage(),
-                thirdPage(context),
-                fourthPage(context),
-                FifthPage(),
-                SixthPage(),
-
+          scrollDirection: Axis.vertical,
+          children: [
+            FirstPageLayout(),
+            SecondPageLayout(),
+            // SecondPage(),
+            // thirdPage(context),
+            // fourthPage(context),
+            // FifthPage(),
+            // SixthPage(),
           ],
         ));
   }
 }
+  
