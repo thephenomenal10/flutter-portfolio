@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:myCV/Layout/SixthLayoutPage.dart';
+import 'package:myCV/Layout/fifthLayoutPage.dart';
 import 'package:myCV/Layout/firstPageLayout.dart';
+import 'package:myCV/Layout/fourthLayoutPage.dart';
 import 'package:myCV/Layout/secondPageLayout.dart';
+import 'package:myCV/Layout/thirdLayoutPage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,13 +21,12 @@ class _HomePageState extends State<HomePage> {
           children: [
             FirstPageLayout(),
             SecondPageLayout(),
-            // SecondPage(),
-            // thirdPage(context),
-            // fourthPage(context),
-            // FifthPage(),
+            ThirdPageLayout(),
+            FourthPageLayout(),
+            FifthPageLayout(),
+            SixthPageLayout(),
             // SixthPage(),
           ],
         ));
   }
 }
-  

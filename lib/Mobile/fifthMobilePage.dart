@@ -1,4 +1,3 @@
-import 'dart:async';
 
 import 'package:decoding_text_effect/decoding_text_effect.dart';
 import 'package:flutter/material.dart';
@@ -9,12 +8,12 @@ import 'package:particles_flutter/particles_flutter.dart';
 
 import '../constants.dart';
 
-class FifthPage extends StatefulWidget {
+class FifthMobilePage extends StatefulWidget {
   @override
-  _FifthPageState createState() => _FifthPageState();
+  _FifthMobilePageState createState() => _FifthMobilePageState();
 }
 
-class _FifthPageState extends State<FifthPage> {
+class _FifthMobilePageState extends State<FifthMobilePage> {
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -52,10 +51,10 @@ class _FifthPageState extends State<FifthPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 70.0),
+                    padding: EdgeInsets.only(left: 30.0),
                     child: Container(
                       height: 3.0,
-                      width: 120.0,
+                      width: 70.0,
                       color: violet,
                     ),
                   ),
@@ -65,7 +64,7 @@ class _FifthPageState extends State<FifthPage> {
                       "Testimonnials",
                       style: GoogleFonts.varelaRound(
                           textStyle:
-                              new TextStyle(color: Colors.white, fontSize: 24)),
+                              new TextStyle(color: Colors.white, fontSize: 18)),
                     ),
                   ),
                 ],
@@ -78,27 +77,28 @@ class _FifthPageState extends State<FifthPage> {
                   decodeEffect: DecodeEffect.fromEnd,
                   textStyle: new TextStyle(
                       color: Colors.white,
-                      fontSize: 90,
+                      fontSize: 40,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 4.0),
                 ),
               ),
-              SizedBox(height: 130),
+              SizedBox(height: 150),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     alignment: Alignment.center,
-                    width: 1400,
+                    width: MediaQuery.of(context).size.width/1,
                     child: CarouselSlider.builder(
                       options: CarouselOptions(
-                          height: 300,
+                        enlargeCenterPage: true,
+                          height: 400,
                           autoPlay: true,
                           pauseAutoPlayOnTouch: true,
                           scrollDirection: Axis.horizontal),
                       itemCount: data.length,
                       itemBuilder: (BuildContext context, int i) => Container(
-                          width: 600,
+                          width: 300,
                           child: new Container(
                             child: new Column(
                               children: [
@@ -110,12 +110,12 @@ class _FifthPageState extends State<FifthPage> {
                                     textDirection: TextDirection.ltr,
                                     style: GoogleFonts.varelaRound(
                                         textStyle: new TextStyle(
-                                            color: Colors.white, fontSize: 20)),
+                                            color: Colors.white, fontSize: 17)),
                                   ),
                                 ),
                                 SizedBox(height: 30.0),
                                 Container(
-                                  margin: EdgeInsets.only(left: 280),
+                                  margin: EdgeInsets.only(left: 100),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
@@ -125,7 +125,7 @@ class _FifthPageState extends State<FifthPage> {
                                         padding: EdgeInsets.only(left: 70.0),
                                         child: Container(
                                           height: 3.0,
-                                          width: 70.0,
+                                          width: 30.0,
                                           color: violet,
                                         ),
                                       ),
@@ -136,7 +136,7 @@ class _FifthPageState extends State<FifthPage> {
                                           style: GoogleFonts.varelaRound(
                                               textStyle: new TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 18)),
+                                                  fontSize: 12)),
                                         ),
                                       ),
                                     ],

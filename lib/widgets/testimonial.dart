@@ -10,5 +10,9 @@ List data = [
   {
     "name": "Akhil Choudhary",
     "desc": "Working with Sahyog sir was a great experience, I had one of my most productive work session while working with him. He is a great leader and a good friend. "
+  },
+  {
+    "name": "Mitul Gautam",
+    "desc": "A person like you always stands behind the team in good as well as the hard times. You helped us in reaching our target work, we are fortunate to have you on our team.You and your work always stood by the expectations and has a meaningful contribution."
   }
 ];
