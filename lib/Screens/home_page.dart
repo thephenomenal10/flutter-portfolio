@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
     return new Scaffold(
         backgroundColor: Colors.black,
         body: PageView(
+          
           scrollDirection: Axis.vertical,
           children: [
             FirstPageLayout(),
