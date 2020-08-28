@@ -36,145 +36,135 @@ Widget fourthTabletPage(BuildContext context) {
           ),
         ),
       ),
+      SizedBox(
+        width: 100.0,
+      ),
       Expanded(
         child: new Container(
-          // margin: EdgeInsets.only(left: 100, top: 50, bottom: 50.0, right: 100),
-          // width: 860,
           color: Colors.black,
-          child: Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 300,
-                      height: 300,
-                      child: Expanded(
-                        child: HoverCard(
-                          builder: (context, hovering) {
-                            return Container(
-                                color: Color(0xFFE9E9E9),
-                                // child: Image.network(
-                                //     "https://1.bp.blogspot.com/-7IyIlor3RBw/Xt5CsR-RJ0I/AAAAAAAAACg/rkEJwg4oor4wPpdUM6WYfCEf23x_0zAEwCNcBGAsYHQ/s1600/ncrb.jpeg",
-                                //     fit: BoxFit.fitWidth));
-                                child: Image.asset("assets/ncrb.jpeg",
-                                    fit: BoxFit.fitWidth));
-                          },
-                          depth: 10,
-                          depthColor: Colors.grey[500],
-                          onTap: () {
-                            return DialogBox().show(context, "NCRB App",
-                                "This is android application for users as well\n as users. In  this application we had implimented \n all the features which can done Offline.");
-                          },
-                          shadow: BoxShadow(
-                              color: Colors.purple[200],
-                              blurRadius: 30,
-                              spreadRadius: -40,
-                              offset: Offset(0, 40)),
-                        ),
-                      ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 300,
+                    height: 300,
+                    child: HoverCard(
+                      builder: (context, hovering) {
+                        return Container(
+                            color: Color(0xFFE9E9E9),
+                            // child: Image.network(
+                            //     "https://1.bp.blogspot.com/-7IyIlor3RBw/Xt5CsR-RJ0I/AAAAAAAAACg/rkEJwg4oor4wPpdUM6WYfCEf23x_0zAEwCNcBGAsYHQ/s1600/ncrb.jpeg",
+                            //     fit: BoxFit.fitWidth));
+                            child: Image.asset("assets/ncrb.jpeg",
+                                fit: BoxFit.fitWidth));
+                      },
+                      depth: 10,
+                      depthColor: Colors.grey[500],
+                      onTap: () {
+                        return DialogBox().show(context, "NCRB App",
+                            "This is android application for users as well\n as users. In  this application we had implimented \n all the features which can done Offline.");
+                      },
+                      shadow: BoxShadow(
+                          color: Colors.purple[200],
+                          blurRadius: 30,
+                          spreadRadius: -40,
+                          offset: Offset(0, 40)),
                     ),
-                    // SizedBox(width: 100),
-                    //2 nd card
-                    Container(
-                      width: 300,
-                      height: 300,
-                      child: Expanded(
-                        child: HoverCard(
-                          builder: (context, hovering) {
-                            return Container(
-                                color: Color(0xFFE9E9E9),
-                                // child: Image.network(
-                                //     "https://1.bp.blogspot.com/-H_dz4SWf_1s/Xt5DQRlgBXI/AAAAAAAAACo/y5y55kuGCo0M7MEzmlUwk08k50eiR0CFQCNcBGAsYHQ/s1600/fintech.jpeg",
-                                //     fit: BoxFit.cover)
-                                child: Image.asset("assets/fintech.jpeg",
-                                    fit: BoxFit.cover));
-                          },
-                          depth: 10,
-                          depthColor: Colors.grey[500],
-                          onTap: () {
-                            return DialogBox().show(context, "Fintech WebApp",
-                                "This website is developed by common technology like \nHTML, css, JavaScript having several features \nlike Expense Manager, Loan manager, Tax Calculator,\n Currency convertor with smooth and simple Ui experience ");
-                          },
-                          shadow: BoxShadow(
-                              color: Colors.purple[200],
-                              blurRadius: 30,
-                              spreadRadius: -40,
-                              offset: Offset(0, 40)),
-                        ),
-                      ),
+                  ),
+                  //2 nd card
+                  Container(
+                    width: 300,
+                    height: 300,
+                    child: HoverCard(
+                      builder: (context, hovering) {
+                        return Container(
+                            color: Color(0xFFE9E9E9),
+                            // child: Image.network(
+                            //     "https://1.bp.blogspot.com/-H_dz4SWf_1s/Xt5DQRlgBXI/AAAAAAAAACo/y5y55kuGCo0M7MEzmlUwk08k50eiR0CFQCNcBGAsYHQ/s1600/fintech.jpeg",
+                            //     fit: BoxFit.cover)
+                            child: Image.asset("assets/fintech.jpeg",
+                                fit: BoxFit.cover));
+                      },
+                      depth: 10,
+                      depthColor: Colors.grey[500],
+                      onTap: () {
+                        return DialogBox().show(context, "Fintech WebApp",
+                            "This website is developed by common technology like \nHTML, css, JavaScript having several features \nlike Expense Manager, Loan manager, Tax Calculator,\n Currency convertor with smooth and simple Ui experience ");
+                      },
+                      shadow: BoxShadow(
+                          color: Colors.purple[200],
+                          blurRadius: 30,
+                          spreadRadius: -40,
+                          offset: Offset(0, 40)),
                     ),
-                  ],
-                ),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 300,
-                      height: 300,
-                      child: Expanded(
-                        child: HoverCard(
-                          builder: (context, hovering) {
-                            return Container(
-                                color: Color(0xFFE9E9E9),
-                                // child: Image.network(
-                                //     "https://1.bp.blogspot.com/-DMuzSKnvfnc/Xt5mtSI83yI/AAAAAAAAADM/gdLDG9uTXPEEtIx-lco1ieOCqSV7uVA5QCNcBGAsYHQ/s1600/Annotation%2B2020-06-08%2B215402.png",
-                                //     fit: BoxFit.cover)
-                                child: Image.asset("assets/nat.png",
-                                    fit: BoxFit.cover));
-                          },
-                          depth: 10,
-                          depthColor: Colors.grey[500],
-                          onTap: () {
-                            return DialogBox().show(context, "Natours WebApp",
-                                "This website is developed using React, Node js,\n Mongoose for data modeling and mongo Db for database.\n This users can buy the tours to travel with their guide, etc");
-                          },
-                          shadow: BoxShadow(
-                              color: Colors.purple[200],
-                              blurRadius: 30,
-                              spreadRadius: -40,
-                              offset: Offset(0, 40)),
-                        ),
-                      ),
+                  ),
+                ],
+              ),
+              new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 300,
+                    height: 300,
+                    child: HoverCard(
+                      builder: (context, hovering) {
+                        return Container(
+                            color: Color(0xFFE9E9E9),
+                            // child: Image.network(
+                            //     "https://1.bp.blogspot.com/-DMuzSKnvfnc/Xt5mtSI83yI/AAAAAAAAADM/gdLDG9uTXPEEtIx-lco1ieOCqSV7uVA5QCNcBGAsYHQ/s1600/Annotation%2B2020-06-08%2B215402.png",
+                            //     fit: BoxFit.cover)
+                            child: Image.asset("assets/nat.png",
+                                fit: BoxFit.cover));
+                      },
+                      depth: 10,
+                      depthColor: Colors.grey[500],
+                      onTap: () {
+                        return DialogBox().show(context, "Natours WebApp",
+                            "This website is developed using React, Node js,\n Mongoose for data modeling and mongo Db for database.\n This users can buy the tours to travel with their guide, etc");
+                      },
+                      shadow: BoxShadow(
+                          color: Colors.purple[200],
+                          blurRadius: 30,
+                          spreadRadius: -40,
+                          offset: Offset(0, 40)),
                     ),
-                    //4 nd card
-                    Container(
-                      width: 300,
-                      height: 300,
-                      child: Expanded(
-                        child: HoverCard(
-                          builder: (context, hovering) {
-                            return Container(
-                                color: Color(0xFFE9E9E9),
-                                // child: Image.network(
-                                //     "https://1.bp.blogspot.com/-bxAQNWuwjMY/Xt5lAji8TJI/AAAAAAAAADA/Z4XJ9rdQqi0YyFKbbpyQOStYCaUz4QnBACNcBGAsYHQ/s1600/Screenshot_20200608-212818%2B%25281%2529.png",
-                                //     fit: BoxFit.contain)
-                                child: Image.asset("assets/exerholic.png",
-                                    fit: BoxFit.contain));
-                          },
-                          depth: 10,
-                          depthColor: Colors.grey[500],
-                          onTap: () {
-                            return DialogBox().show(context, "Exerholic App",
-                                "This Application is developed using Flutter,\n firebase as a backend service .\n I developed this application for RSTech Software Sol.,\n Application have several features like to watch\n particluar exercise videos, even they can book \nand appoint the classes of given package by the Administrator ");
-                          },
-                          shadow: BoxShadow(
-                              color: Colors.purple[200],
-                              blurRadius: 30,
-                              spreadRadius: -40,
-                              offset: Offset(0, 40)),
-                        ),
-                      ),
+                  ),
+                  //4 nd card
+                  Container(
+                    width: 300,
+                    height: 300,
+                    child: HoverCard(
+                      builder: (context, hovering) {
+                        return Container(
+                            color: Color(0xFFE9E9E9),
+                            // child: Image.network(
+                            //     "https://1.bp.blogspot.com/-bxAQNWuwjMY/Xt5lAji8TJI/AAAAAAAAADA/Z4XJ9rdQqi0YyFKbbpyQOStYCaUz4QnBACNcBGAsYHQ/s1600/Screenshot_20200608-212818%2B%25281%2529.png",
+                            //     fit: BoxFit.contain)
+                            child: Image.asset("assets/exerholic.png",
+                                fit: BoxFit.contain));
+                      },
+                      depth: 10,
+                      depthColor: Colors.grey[500],
+                      onTap: () {
+                        return DialogBox().show(context, "Exerholic App",
+                            "This Application is developed using Flutter,\n firebase as a backend service .\n I developed this application for RSTech Software Sol.,\n Application have several features like to watch\n particluar exercise videos, even they can book \nand appoint the classes of given package by the Administrator ");
+                      },
+                      shadow: BoxShadow(
+                          color: Colors.purple[200],
+                          blurRadius: 30,
+                          spreadRadius: -40,
+                          offset: Offset(0, 40)),
                     ),
-                  ],
-                ),
-              ],
-            ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),

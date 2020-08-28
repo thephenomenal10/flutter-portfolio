@@ -36,22 +36,23 @@ Widget fourthDesktopPage(BuildContext context) {
           ),
         ),
       ),
-      new Container(
-        // margin: EdgeInsets.only(left: 100, top: 50, bottom: 50.0, right: 100),
-        // width: 860,
-        color: Colors.black,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            new Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  width: 350,
-                  height: 350,
-                  child: Expanded(
+      SizedBox(
+        width: 100.0,
+      ),
+      Expanded(
+        child: new Container(
+          color: Colors.black,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 350,
+                    height: 350,
                     child: HoverCard(
                       builder: (context, hovering) {
                         return Container(
@@ -75,13 +76,10 @@ Widget fourthDesktopPage(BuildContext context) {
                           offset: Offset(0, 40)),
                     ),
                   ),
-                ),
-                // SizedBox(width: 100),
-                //2 nd card
-                Container(
-                  width: 350,
-                  height: 350,
-                  child: Expanded(
+                  //2 nd card
+                  Container(
+                    width: 350,
+                    height: 350,
                     child: HoverCard(
                       builder: (context, hovering) {
                         return Container(
@@ -105,17 +103,15 @@ Widget fourthDesktopPage(BuildContext context) {
                           offset: Offset(0, 40)),
                     ),
                   ),
-                ),
-              ],
-            ),
-            new Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  width: 350,
-                  height: 350,
-                  child: Expanded(
+                ],
+              ),
+              new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 350,
+                    height: 350,
                     child: HoverCard(
                       builder: (context, hovering) {
                         return Container(
@@ -139,12 +135,10 @@ Widget fourthDesktopPage(BuildContext context) {
                           offset: Offset(0, 40)),
                     ),
                   ),
-                ),
-                //4 nd card
-                Container(
-                  width: 350,
-                  height: 350,
-                  child: Expanded(
+                  //4 nd card
+                  Container(
+                    width: 350,
+                    height: 350,
                     child: HoverCard(
                       builder: (context, hovering) {
                         return Container(
@@ -168,10 +162,10 @@ Widget fourthDesktopPage(BuildContext context) {
                           offset: Offset(0, 40)),
                     ),
                   ),
-                ),
-              ],
-            ),
-          ],
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     ],
